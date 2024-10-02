@@ -4,7 +4,7 @@
      align-items: center;
      justify-content: center;
      gap: 80px;
-     margin: 80px 170px;
+     padding: 15px 7%;
 }
 
 .contact-title{
@@ -26,13 +26,16 @@
 
 .contact-section{
     display: flex;
-    gap: 150px;
+    gap: 100px;
+    width: 100%;
+    padding: 20px 40px;
 }
 
 .contact-left{
     display: flex;
     flex-direction: column;
     gap: 30px;
+   width: 50%;
 }
 
 .contact-left h1{
@@ -45,7 +48,7 @@
 }
 
 .contact-left p{
-   max-width: 550px;
+   max-width: 600px;
    color: #D8D8D8;
    font-size: 20px;
    line-height: 35px;
@@ -57,17 +60,20 @@
     gap: 30px;
     color: #D8D8D8;
     font-size: 22px;
+    
 }
 
 .contact-detail{
     display: flex;
     align-items: center;
     gap: 20px;
+    
 }
 
 .contact-right{
     display: flex;
     flex-direction: column;
+    width:50%;
     gap: 30px;
 }
 
@@ -79,7 +85,7 @@
 
 .contact-right input{
     border: none;
-    width:700px;
+    width:100%;
     height: 78px;
     padding-left: 20px;
     border-radius: 4px;
@@ -87,10 +93,12 @@
     color: #A0A0A0;
     font-size: 20px;
     font-family: 'outfit';
+    
 }
 
 .contact-right textarea{
     width: 650px;
+    width:100%;
     border: none;
     padding: 25px;
     border-radius: 4px;
@@ -117,11 +125,23 @@
     transform: scale(1.1);
     transition:  0.3s;
 }
-    
+   
+@media(max-width:980px){
+    .contact-left{
+        width: 50%;
+    }
+    .contact-section{
+        gap: 50px;
+    }
+    .contact-right{
+        width: 50%;
+    }
+}
+
 @media(max-width:768px){
     .contact{
         gap:50px;
-        margin:50px 70px;
+        margin:0 70px;
         align-items: start;
     }
 
@@ -140,6 +160,9 @@
         flex-direction: column;
     }
 
+    .contact-left{
+        width: 100%;
+    }
     .contact-left h1{
         font-size: 54px;
     }
@@ -150,10 +173,15 @@
 
     .contact-detail{
         gap: 20px;
+     
     }
     .contact-detail img{
         width: 25px;
 
+    }
+
+    .contact-right{
+        width: 100%;
     }
 
     .contact-right label{
@@ -164,6 +192,7 @@
     .contact-right input{
         width: 100%;
         font-size: 20px;
+        
     }
 
     .contact-right textarea{
@@ -174,5 +203,11 @@
     .contact-submit{
         font-size: 20px;
         padding: 15px 40px;
+    }
+}
+
+@media(max-width:580px){
+    .contact-section{
+        padding: 20px 10px;
     }
 }
