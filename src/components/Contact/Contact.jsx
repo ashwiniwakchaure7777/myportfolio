@@ -53,11 +53,21 @@ const Contact = () => {
               <p>www.linkedin.com/in/ ashwini-wakchaure-6a5b65161</p>
             </div>
             <div className="contact-detail">
-              <img src="./location_icon.svg" alt="" />
-              <p>+91 9403918337</p>
+              <img
+                src="./instagram-white-icon.png"
+                style={{ height: "35px", width: "35px" }}
+                alt=""
+              />
+              <a href="https://www.instagram.com/_ashwini_vw_?igsh=dGljYW91cm44a3Zh">
+                _ashwini_vw_
+              </a>
             </div>
             <div className="contact-detail">
               <img src="./call_icon.svg" alt="" />
+              <p>+91 9403918337</p>
+            </div>
+            <div className="contact-detail">
+              <img src="./location_icon.svg" alt="" />
               <p>Pune, Maharahstra, India</p>
             </div>
           </div>
