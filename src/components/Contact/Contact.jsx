@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-// import { CiLinkedin } from "react-icons/ci";
+import { IoLogoLinkedin, IoLogoInstagram, IoMail, IoCall, IoLocation } from "react-icons/io5";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -45,30 +45,28 @@ const Contact = () => {
           </p>
           <div className="contact-details">
             <div className="contact-detail">
-              <img src="./mail_icon.svg" alt="" />
+              <IoMail className="contact-icon" />
               <p>ashwakchaure@gmail.com</p>
             </div>
             <div className="contact-detail">
-              <img style={{ width: "40px" }} src="./linkedin_icon.png" alt="" />
-              <p>www.linkedin.com/in/ ashwini-wakchaure-6a5b65161</p>
+              <IoLogoLinkedin className="contact-icon" />
+              <a href="https://www.linkedin.com/in/ashwini-wakchaure-6a5b65161?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                Ashwini Wakchaure
+              </a>
             </div>
             <div className="contact-detail">
-              <img
-                src="./instagram-white-icon.png"
-                style={{ height: "35px", width: "35px" }}
-                alt=""
-              />
+              <IoLogoInstagram className="contact-icon" />
               <a href="https://www.instagram.com/_ashwini_vw_?igsh=dGljYW91cm44a3Zh">
                 _ashwini_vw_
               </a>
             </div>
             <div className="contact-detail">
-              <img src="./call_icon.svg" alt="" />
+              <IoCall className="contact-icon" />
               <p>+91 9403918337</p>
             </div>
             <div className="contact-detail">
-              <img src="./location_icon.svg" alt="" />
-              <p>Pune, Maharahstra, India</p>
+              <IoLocation className="contact-icon" />
+              <p>Pune, Maharashtra, India</p>
             </div>
           </div>
         </div>
