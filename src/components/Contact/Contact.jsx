@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import { CiLinkedin } from "react-icons/ci";
+// import { CiLinkedin } from "react-icons/ci";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
