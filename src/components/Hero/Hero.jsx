@@ -22,8 +22,8 @@ const Hero = () => {
         </div>
         <a
           className="hero-resume"
-          href="./Resume.pdf"
-          download="Ashwini_Wakchaure_MERN_Developer.pdf"
+          href="./Ashwini_wakchaure_node.pdf"
+          download="Ashwini_wakchaure_node.pdf"
         >
           My resume
         </a>
