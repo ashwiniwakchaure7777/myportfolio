@@ -29,10 +29,10 @@ const MyWork = () => {
                     })
                 }
             </div>
-            <div className="mywork-showmore">
+            {/* <div className="mywork-showmore">
                 <p>Show more</p>
                 <img src='./arrow_icon.svg' alt='' />
-            </div>
+            </div> */}
         </div>
     )
 }
