@@ -13,7 +13,7 @@ const mywork_data = [
     //      w_img:"./project_2.png",
     //      link:"https://edusityhindu.netlify.app/"
     // },
-    
+
     // {
     //     w_no:3,
     //     w_name:"Web design",
@@ -27,10 +27,10 @@ const mywork_data = [
     //     link:""
     // },
     {
-        w_no:5,
-        w_name:"Web design",
-        w_img:"./project_5.png",
-        link:"https://modernwebdesign.netlify.app/"
+        w_no: 5,
+        w_name: "Web design",
+        w_img: "./project_5.png",
+        link: "https://modernwebdesign.netlify.app/"
     },
     // {
     //     w_no:6,
@@ -39,11 +39,23 @@ const mywork_data = [
     //    link:"https://cool-haupia-e8acf0.netlify.app/"
     // },
     {
-        w_no:6,
-        w_name:"Web design",
-       w_img:"./image.png",
-       link:"http://elegant-kataifi-8fbf62.netlify.app/"
-    }
- ]
- 
+        w_no: 6,
+        w_name: "Web design",
+        w_img: "./image.png",
+        link: "http://elegant-kataifi-8fbf62.netlify.app/"
+    },
+    {
+        w_no: 7,
+        w_name: "Web design",
+        w_img: "./image2.png",
+        link: "https://everyday-tracker.com/"
+    },
+    // {
+        // w_no: 8,
+        // w_name: "Web design",
+        // w_img: "./image2.png",
+        // link: "https://everyday-tracker.com/"
+    // }
+]
+
 export default mywork_data;

@@ -1,5 +1,20 @@
 import React from "react";
 import "./About.css";
+import {
+  SiMongodb,
+  SiExpress,
+  SiReact,
+  SiNodedotjs,
+  SiMysql,
+} from "react-icons/si";
+
+const techStack = [
+  { letter: "M", label: "MongoDB", Icon: SiMongodb, color: "#47A248" },
+  { letter: "E", label: "Express", Icon: SiExpress, color: "#888888" },
+  { letter: "R", label: "React", Icon: SiReact, color: "#61DAFB" },
+  { letter: "N", label: "Node.js", Icon: SiNodedotjs, color: "#339933" },
+  { letter: "SQL", label: "MySQL", Icon: SiMysql, color: "#00758F" },
+];
 
 const About = () => {
   return (
@@ -82,8 +97,15 @@ const About = () => {
           <p>LOOKING FOR THE JOB</p>
         </div>
       </div> */}
-      <div className="about-skill">
-        <img src="mongodb.png" alt="mongo" />
+      <div className="tech-stack">
+        {techStack.map(({ letter, label, Icon, color }) => (
+          <div key={label} className="tech-stack-item" title={label}>
+            <Icon className="tech-stack-icon" style={{ color }} aria-hidden="true" />
+            <span className="tech-stack-letter" style={{ color }}>
+              {letter}
+            </span>
+          </div>
+        ))}
       </div>
     </div>
   );
